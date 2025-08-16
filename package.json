@@ -5,14 +5,15 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --public-url ./ --no-optimize"
   },
   "prettier.embeddedLanguageFormatting": "auto",
   "author": "Ekoyi Amity Tobi",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "svgo": "^2.8.0"
   },
   "dependencies": {
     "core-js": "^3.45.0",
